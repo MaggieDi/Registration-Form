@@ -1,0 +1,24 @@
+<div id="address" >				
+									<div class="row">
+										<header><p>Address</p></header>
+									</div>				
+									<div class="row">
+										<input list="country" name="country" placeholder="Country Select" >
+										<datalist id="country">
+											<option value="Bulgaria">
+											<option value="Greece">
+											<option value="Turkey">
+											<option value="Romania">
+										</datalist>
+										
+									</div>
+									<div class="row">
+										<input type="text"  name="location" placeholder="Location" >
+										
+									</div>
+									<div class="row">
+										<input type="text"   name="address" placeholder="Address" >
+
+										
+									</div>
+								</div>
