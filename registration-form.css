@@ -80,26 +80,33 @@ input:focus,
 button:focus {
     outline: none;
 }
-div.reg-form{
+div#reg-form {
 	margin: 10px 0px 0px 0px;
-	
-	
-	
-}
-div.reg-form div.header{
-	margin: 0px!important;
-	padding: 5px;
-	background-color: #2A334F;
-	color: #fff;
-	text-align: center;
-	font-size: 30px;
-}
-div.reg-form div.section{
-	text-align: center;
+    background: #febbbb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #FFF4C1 0%, #fff4c1 45%, #86d8d6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #FFF4C1 0%,#fff4c1 45%,#86d8d6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #FFF4C1 0%,#fff4c1 45%,#86d8d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#86d8d6',GradientType=0 ); /* IE6-9 */
 
 	
 }
-div.reg-form div.section input{
+div#reg-form div#header{
+	margin: 0px!important;
+	padding: 5px;
+    background: #fc8a8a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fc8a8a 0%, #f95252 2%, #f99595 45%, #FFF4C1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fc8a8a 0%,#f95252 2%,#f99595 45%,#FFF4C1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fc8a8a 0%,#f95252 2%,#f99595 45%,#FFF4C1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc8a8a', endColorstr='#edddb1',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+	text-align: center;
+	font-size: 30px;
+}
+div#reg-form div.section{
+	text-align: center;
+
+}
+div#reg-form div.section input{
 	width: 80%;
 	padding: 10px;
 	border-radius: 5px;
@@ -107,46 +114,52 @@ div.reg-form div.section input{
 	box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px;
 }
 
-div.reg-form div.section header p{
+div#reg-form div.section header p{
 	padding: 10px;
+    color: #CE9906;
 	font-size: 24px;
-	border-bottom: 2px solid #F2CC5C;
+	border-bottom: 2px solid #FFD20C;
+}
+div#reg-form div.section div#address{
+     -webkit-transition: ease-in 300ms;
+    -moz-transition: ease-in 300ms;
+    -o-transition: ease-in 300ms;
+    transition: ease-in 300ms;
+
 }
 
-div.reg-form  #btn-submit{
+div#reg-form  #btn-submit{
 	text-align: center;
 	width: 30%!important;
 	padding: 10px;
 	text-decoration: none;
-	background-color: yellowgreen;
+	background-color: #86d8d6;
 	display: inline-block;
-	 border-radius: 5px;
-}
-
-.visible{
-	padding: 10px!important;
-	border-radius: 10px;
-	width: 80%;
-	text-align: center;
-	display: inline-block!important;
+	border-radius: 5px;
 
 }
-.hidden{
-	display:  none;
+
+#registration span.arrow-box{
+    display: block;
+    margin: 10px 0px 0px 0px;
+   
 }
+
  .arrow-box {
 	position: relative;
-	background: #d55151;
-	border: 2px solid #f5a2a2;
-	
-	padding: 10px 20px 10px 20px;
-	-webkit-transition: ease-in 200ms;
-    -moz-transition: ease-in 200ms;
-    -o-transition: ease-in 200ms;
-    transition: ease-in 200ms;
+    display: inline-block!important;
+	background: #fc8a8a;
+	border: 2px solid #F95757;
+	border-radius: 10px;
+    width: 80%;
+    -webkit-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+    
 
 }
- .arrow-box:after, .arrow_box:before {
+ .arrow-box:after{
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -154,30 +167,21 @@ div.reg-form  #btn-submit{
 	height: 0;
 	width: 0;
 	position: absolute;
-	pointer-events: none;
-	-webkit-transition: ease-in 200ms;
-    -moz-transition: ease-in 200ms;
-    -o-transition: ease-in 200ms;
-    transition: ease-in 200ms;
+	
+
 }
 
  .arrow-box:after {
 	border-color: rgba(213, 81, 81, 0);
-	border-bottom-color: #d55151;
+	border-bottom-color: #fc8a8a;
 	border-width: 10px;
 	margin-left: -10px;
-	-webkit-transition: ease-in 200ms;
-    -moz-transition: ease-in 200ms;
-    -o-transition: ease-in 200ms;
-    transition: ease-in 200ms;
+
 }
  .arrow-box:before {
 	border-color: rgba(245, 162, 162, 0);
-	border-bottom-color: #f5a2a2;
+	border-bottom-color: #fc8a8a;
 	border-width: 33px;
 	margin-left: -33px;
-	-webkit-transition: ease-in 200ms;
-    -moz-transition: ease-in 200ms;
-    -o-transition: ease-in 200ms;
-    transition: ease-in 200ms;
+
 }
